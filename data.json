@@ -1,0 +1,54 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "description": "The JavaScript Techdegree's first project: a simple app that prints a random quote to the page. Of course, the app features a button-timer which both changes the quote and shows the time remaining until the next quote is automatically displayed.",
+            "project_name": "Quote Generator",
+            "technologies": ["Duration-dependent button", "Dynamic backgrounds", "Custom CSS"],
+            "live_link": "https://qstaley921.github.io/project-1-quote-gen/", 
+            "github_link": "https://github.com/qstaley921/project-1-quote-gen",
+            "image_urls": ["/static/imgs/thumbs/p1-thumb.jpg", ["/static/imgs/banners/p1-banner1.jpg", "/static/imgs/banners/p1-banner2.jpg","/static/imgs/banners/p1-banner3.jpg"]],
+            "banner_captions": ["The quotes aren't so much 'random' as they are curated into a list and then randomly displayed.", "You'll notice each quote has a unique color, and is accompanied with an image of the speaker.", "Alas, there's a 'Show another quote' button in the top right, and inside the button is a diminishing timer, where each quote stays projected for the average time it takes to read, or at least, that was the intention."]
+        }, 
+        {
+            "id": "2",
+            "description": "The second project in the techdegree: a static directory of students with pagination buttons to navigate through the results. There's also a dynamic search bar which matches student names with the form input.",
+            "project_name": "Paginating Directory",
+            "technologies": ["JavaScript Filtering", "Click Events"],
+            "live_link": "https://qstaley921.github.io/project-2-pagination/", 
+            "github_link": "https://github.com/qstaley921/project-2-pagination",
+            "image_urls": ["/static/imgs/thumbs/p2-thumb.jpg", ["/static/imgs/banners/p2-banner1.jpg", "/static/imgs/banners/p2-banner2.jpg","/static/imgs/banners/p2-banner3.jpg"]],
+            "banner_captions": ["Notice the pagination buttons and how they are <span style=\"color:#265ae7;\">blue</span> when active. Also notice how they stay active despite other interactions on the page. It may not look like much, but that was a major(ish) victory.", "The search bar correctly filters results and dynamically ammends the number of page-buttons respectively.", "Uh, oh. Spong Bob isn't a student. At least we get an error message."]
+        },
+        {
+            "id": "3",
+            "description": "The third project of the ten required for the Techdegree. This is a form, and it validates and invalidates depending on what you tell it. For instance, \"That doesn't look like an email,\" is an invalidating remark, while \"Correct, that does look good,\" is a validating remark. Nice!—just like I learned in therapy &#128521;",
+            "project_name": "Validating Form",
+            "technologies": ["REGEX Testing", "Font Awesome Icons", "JavaScript Validation Logic", "Submit Events"],
+            "live_link": "https://qstaley921.github.io/project-3-interactive-form/", 
+            "github_link": "https://github.com/qstaley921/project-3-interactive-form",
+            "image_urls": ["/static/imgs/thumbs/p3-thumb.jpg", ["/static/imgs/banners/p3-banner1.jpg", "/static/imgs/banners/p3-banner2.jpg","/static/imgs/banners/p3-banner3.jpg"]],
+            "banner_captions": ["This is what the form looks like overall", "Img two", "img three"]
+        }, 
+        {
+            "id": "4",
+            "description": "A small application which generates random quotes",
+            "project_name": "Phrasehunter Game",
+            "technologies": ["JavaScript", "CSS"],
+            "live_link": "https://qstaley921.github.io/project-4-game-show/", 
+            "github_link": "https://github.com/qstaley921/project-4-game-show",
+            "image_urls": ["/static/imgs/thumbs/p4-thumb.jpg", ["/static/imgs/banners/p4-banner1.jpg", "/static/imgs/banners/p4-banner2.jpg","/static/imgs/banners/p4-banner3.jpg", "/static/imgs/banners/p4-banner4.jpg"]],
+            "banner_captions": ["Img one", "Img two", "img three", "img four"]
+        }, 
+        {
+            "id": "5",
+            "description": "A small application which generates random quotes",
+            "project_name": "API Directory",
+            "technologies": ["JavaScript", "CSS"],
+            "live_link": "https://qstaley921.github.io/project-5-public-api/", 
+            "github_link": "https://github.com/qstaley921/project-5-public-api",
+            "image_urls": ["/static/imgs/thumbs/p5-thumb.jpg", ["/static/imgs/banners/p5-banner1.jpg", "/static/imgs/banners/p5-banner2.jpg","/static/imgs/banners/p5-banner3.jpg", "/static/imgs/banners/p5-banner4.jpg"]],
+            "banner_captions": ["Img one", "Img two", "img three", "img four"]
+        }
+    ]
+}

@@ -2,9 +2,11 @@
   "name": "project-6-express-site",
   "version": "1.0.0",
   "description": "A 'mock' portfolio site for practice using Node.js and Express",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
