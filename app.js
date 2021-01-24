@@ -8,6 +8,16 @@ const app = express();
 app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
+/**
+ * For testing 500 errors or other general errors
+ * - Leave commented for the app to effectively work
+ */
+// app.use((req, res, next) => {
+//     const err = new Error('This err is on line 15 in app.js, and is a test.');
+//     err.status = 500;
+//     next(err);
+// });
+
 const mainRoutes = require('./routes');
 const aboutRoute = require('./routes/about-page');
 const projectRoutes = require('./routes/project');
@@ -28,13 +38,15 @@ app.use((err, req, res, next) => {
         res.locals.error.message = `Oops. This page isn't working. Go somewhere else.`;
         res.locals.error.status = 500;
         console.error('Check your HTML templates; something didn\'t render correctly');
-        res.render('error');
+        return res.render('error');
+    } else {
+        res.status(err.status);
     }
-    res.status(err.status);
+    
     if(err.status === 404) { // renders when the page cannot be found
-        res.render('page-not-found');
+        return res.render('page-not-found');
     } 
-    res.render('error'); // catches other errors, like 500
+    return res.render('error'); // catches other errors, like 500
 });
 
 app.listen(3000, () => {

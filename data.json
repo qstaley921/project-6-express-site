@@ -22,33 +22,33 @@
         },
         {
             "id": "3",
-            "description": "The third project of the ten required for the Techdegree. This is a form, and it validates and invalidates depending on what you tell it. For instance, \"That doesn't look like an email,\" is an invalidating remark, while \"Correct, that does look good,\" is a validating remark. Nice!—just like I learned in therapy &#128521;",
+            "description": "The third project of the ten required for the Techdegree. This is a form, and it validates and invalidates depending on what you tell it. For instance, \"That doesn't look like an email,\" is an invalidating remark, while \"Correct, that does look good,\" is a validating remark. Nice!&mdash;just like I learned in therapy &#128521;",
             "project_name": "Validating Form",
             "technologies": ["REGEX Testing", "Font Awesome Icons", "JavaScript Validation Logic", "Submit Events"],
             "live_link": "https://qstaley921.github.io/project-3-interactive-form/", 
             "github_link": "https://github.com/qstaley921/project-3-interactive-form",
             "image_urls": ["/static/imgs/thumbs/p3-thumb.jpg", ["/static/imgs/banners/p3-banner1.jpg", "/static/imgs/banners/p3-banner2.jpg","/static/imgs/banners/p3-banner3.jpg"]],
-            "banner_captions": ["This is what the form looks like overall", "Img two", "img three"]
+            "banner_captions": ["This is what the form looks like overall and includes inputs for name, email, and two dynamic selection fields; an activities checkbox, which also tallies the cost of the selected events; and a payment section, which includes a 'mock' input for credit cards, PayPal, and Bitcoin.", "Wow. Look at that, a custom validation error message. Ya know, there's three different error messages for each of the input boxes. There's there's the perfunctory: \"Don't leave this empty,\" message; there's the more customized, \"That doesn't look right because ...,\" message; and then there's the fan favorite, \"That's completely wrong!,\" message.", "Here's an example of another tricky situation: stupid-proofing the form by preventing users from selecting two activities scheduled for the same time. And when you hover above an inactive box, your cursor will change to disabled."]
         }, 
         {
             "id": "4",
-            "description": "A small application which generates random quotes",
+            "description": "The fourth project is my favorite so far: this game generates truly random phrases based on the ad-lib formula of inserting random [nouns] with random [adjectives] with random [verbs] with random [adverbs]. The end results is always most absurd. Then it has players guess upon the absurdity. Of course, forgive me if you find some of the phrasings offensive; I blame the comptuer.",
             "project_name": "Phrasehunter Game",
-            "technologies": ["JavaScript", "CSS"],
+            "technologies": ["JavaScript Classes", "Object Oriented Programming", "Random Phrase Generator"],
             "live_link": "https://qstaley921.github.io/project-4-game-show/", 
             "github_link": "https://github.com/qstaley921/project-4-game-show",
             "image_urls": ["/static/imgs/thumbs/p4-thumb.jpg", ["/static/imgs/banners/p4-banner1.jpg", "/static/imgs/banners/p4-banner2.jpg","/static/imgs/banners/p4-banner3.jpg", "/static/imgs/banners/p4-banner4.jpg"]],
-            "banner_captions": ["Img one", "Img two", "img three", "img four"]
+            "banner_captions": ["This is the start menu. Your option is either to click the button, or to not.", "Here's a live-action freeze-frame. You'll notice players just have four lives. However, the phrases are so long, correctly guessing all five vowels is almost always a given.", "Uh, oh. Looks like the smart inmates outsmarted you. Perhaps you'll play again.", "Nice. Divorced veterans is a good guess. It's understandable why they refuse to talk, but it's also understandable why they're divorced."]
         }, 
         {
             "id": "5",
-            "description": "A small application which generates random quotes",
+            "description": "Here's my latest Treehouse project (excluding this one): Project 5! It uses a random-person API to dynamically generate a directory of random people. It also has a pop-up modal for seeing the details of persons inside the directory. And best of all, there's a search bar and a confused birdie for when things go awry.",
             "project_name": "API Directory",
-            "technologies": ["JavaScript", "CSS"],
+            "technologies": ["API Fetching", "Click Event Logic", "Asynchronous Programming", "Error messaging"],
             "live_link": "https://qstaley921.github.io/project-5-public-api/", 
             "github_link": "https://github.com/qstaley921/project-5-public-api",
             "image_urls": ["/static/imgs/thumbs/p5-thumb.jpg", ["/static/imgs/banners/p5-banner1.jpg", "/static/imgs/banners/p5-banner2.jpg","/static/imgs/banners/p5-banner3.jpg", "/static/imgs/banners/p5-banner4.jpg"]],
-            "banner_captions": ["Img one", "Img two", "img three", "img four"]
+            "banner_captions": ["Here's what the directory looks like before interacting with it.", "This is what happens when you click on a person: a pop-up modal appears. Best of all, you can cycle through the directory by using the previous and next buttons.", "Uh, oh. Here's that little birdie I was telling you about. You better hit that delete icon and try again.", "Nice. A search bar. And unlike those instantaneously strange search-bars that submit the results as you type, this search bar requires a good-ole-fashioned submit event&mdash;ya know, by clicking the search icon or hitting enter on your keyboard."]
         }
     ]
 }

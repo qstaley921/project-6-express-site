@@ -9,7 +9,9 @@ block content
 
       //- Add a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
       p.lead.text-light
-        | Hello, there! &#128075;
+        | <span class="greeting-text">Hello, there!</span> 
+        | <br/>
+        | <span class="greeting-text">~</span>
         | <br/>
         | My name is Quentin, and this is my Treehouse Portfolio site. You can see my 'real' portfolio at #[a(href="https://qstaley.com" target="blank") Q Staley Dot Com], but that project is slow-roasting on the back-burner while I complete my #[a(href="https://teamtreehouse.com/techdegree" target="blank") Team Treehouse JavaScript Techdegree]. The following showcase includes 6 of the 10 techdegree projects (with this website counting as the sixth). The projects were designed by Treehouse, while the JavaScript powering them is all mine&mdash;with the help of my techdegree peers who've reviewed my code. The purpose is to prove, practice, and grow my Web Development skills, and of course, to make a mess of fun along the way. I hope you enjoy, and forever thank you for visiting &#128513;
   article.grid-container.portfolio-index
@@ -19,5 +21,5 @@ block content
             .cell
                 a(href=`/project/${project.id}`)
                     img.thumbnail(src=`${project.image_urls[0]}`)
-                    h5 Project-#{project.id} #{project.project_name}
+                    h5 <span class="thumb-title">Project #{project.id}</span> <span class="thumb-name">#{project.project_name}</span>
       

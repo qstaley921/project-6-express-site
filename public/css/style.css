@@ -6,9 +6,22 @@ h1,h2,h3,h4,h5,p{
   h5{
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: 2.5px;
+    color: #666;
+  }
+
+.thumb-name{
+    font-size: .75em;
+}   
+
+.thumb-title{
+    font-size: .75em;
+    color: black;
+    font-weight: bold;
     -webkit-text-transform: uppercase;
     text-transform: uppercase;
-  }
+}
+
+  
 
   h6{
     letter-spacing: 2.5px;
@@ -20,6 +33,12 @@ h1,h2,h3,h4,h5,p{
   p{
     font-size: 15px;
     color: #666;
+  }
+
+  .underline{
+    border-bottom: solid darkgray 1px;
+    font-weight: bold;
+    padding-bottom: 1px;
   }
 
 .round{
@@ -46,14 +65,49 @@ a:hover{
   color: #111;
 }
 
+.greeting-text:first-of-type{
+    margin-top: 25px;
+    font-style: italic;
+}
+
+.greeting-text {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
 .image{
   display: inline-block;
-  max-width: 100%;
+  margin-left: auto;
   margin-bottom: 1rem;
   border: solid 4px #fefefe;
   border-radius: 0;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
   line-height: 0;
+}
+
+.error-img{
+    width: 300px;
+    height: auto;
+    margin: 100px auto 0;
+}
+
+.error-img p{
+    text-align: right;
+}
+
+.error-img a {
+    margin-top: 25px;
+    font-size: .75em;
+    display: inline-block;
+    width: 100%;
+    border-top: solid darkgray 2px;
+    padding-top: 3px
+}
+
+.error-img a:hover{
+    text-decoration: underline;
 }
 
 .portfolio-me{
