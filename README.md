@@ -65,13 +65,14 @@
 1. **Font Changes** | *I changed the font in the following ways:*
     1. The home page gallery thumbnail titles are smaller, have weight variance, and are no longer all uppercase
     2. The font on the project pages includes italicized captions below each of the images
-    3. The brief bio within the layout aside is not justfied
+    3. The brief bio within the layout aside is now justfied
 2. **Box Shadows**
     1. I added an inset box shadow and background to the project thumbnails when a cursor hovers or focuses on them
 3. **Background**
     1. I changed the layout aside background to pure black for a little more contrast, and to match the borders I put around each of my imgs
 
 **Static Elements** 
+
 Just to note, I've used `express.static('public')` per the project's guidelines, where the new route for the contents within the public directory is now `/static/` 
 - And, the routes to the images are stored in the `data.json` files
 - the routes to the `<head>` elements and `<scripts>` are in the `layout.pug` view
