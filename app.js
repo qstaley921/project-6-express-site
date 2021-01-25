@@ -1,5 +1,5 @@
 // ====================================
-//  GLOBAL VARIABLES
+//  GLOBAL VARIABLES & REQUIREMENTS
 // ====================================
 
 const express = require('express');
@@ -8,30 +8,37 @@ const app = express();
 app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
-/**
- * For testing 500 errors or other general errors
- * - Leave commented for the app to effectively work
- */
-// app.use((req, res, next) => {
-//     const err = new Error('This err is on line 15 in app.js, and is a test.');
-//     err.status = 500;
-//     next(err);
-// });
-
+// Routes or Module imports from `/routes/
 const mainRoutes = require('./routes');
 const aboutRoute = require('./routes/about-page');
 const projectRoutes = require('./routes/project');
 
-app.use(mainRoutes);
-app.use(aboutRoute);
-app.use(projectRoutes);
+// ====================================
+//  EXPRESS MIDDLEWARE 
+// ====================================
 
+app.use(mainRoutes); // for importing `index.js` & rendering the home page
+app.use(aboutRoute); // for importing `about-page.js` & rendering the about page
+app.use(projectRoutes); // for importing `project.js` & rendering the project pages
+
+/**
+ * Creates a 404 Error Object and passes it to the next middlware function
+ */
 app.use((req, res, next) => {
     const err = new Error('Page not found');
     err.status = 404;
     next(err);
 });
 
+/**
+ * returns one of 3 outcomes: 
+ *  - 1. the program breaks and the Error object is not created, and is undefined
+ *      - @return renders `error.pug` template
+ *  - 2. the Error.status is 404
+ *      - @return renders the `page-not-found.pug` template
+ *  - 3. a general Error occurs and 
+ *      - @return renders `error.pug` template  
+ */
 app.use((err, req, res, next) => {
     res.locals.error = err;
     if (err.status === undefined) { // renders when html cannot be processed, a pug template is broken
@@ -49,6 +56,24 @@ app.use((err, req, res, next) => {
     return res.render('error'); // catches other errors, like 500
 });
 
+/**
+ * Listens at port 3000
+ */
 app.listen(3000, () => {
     console.log('This app is running on localhost:3000');
 }); 
+
+// ====================================
+// OTHER
+// ====================================
+
+/**
+ * For testing 500 errors or other general errors
+ * - Leave commented for the app to effectively work
+ * - Or paste above the Middleware to test 
+ */
+// app.use((req, res, next) => {
+//     const err = new Error('This err is on line 15 in app.js, and is a test.');
+//     err.status = 500;
+//     next(err);
+// });//

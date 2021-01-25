@@ -1,10 +1,14 @@
 // ====================================
-//  GLOBAL VARIABLES
+//  GLOBAL VARIABLES & REQUIREMENTS
 // ====================================
 
 const express = require('express');
 const router = express.Router();
-const projectData = require('../data.json').projects;
+const projectData = require('../data.json').projects; 
+
+// ====================================
+//  EXPRESS MIDDLEWARE 
+// ====================================
 
 /**
  * Renders a `project.pug` view based on the path :id which corresponds to the projectData array index
@@ -21,5 +25,9 @@ router.get('/project/:id', (req, res) => {
     }
     res.render('project', { data });
 });
+
+// ====================================
+//  EXPORT MODULE
+// ====================================
 
 module.exports = router;

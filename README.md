@@ -21,6 +21,8 @@
 5. If it doesn't, then, tough luck. Nah, JK. Perhaps, make sure `node --version` returns a node version number, and the same with `npm --version`. Make sure you've changed your terminal's directory to wherever you've saved my project's files. Other than that, it works on my machine :wink:
 
 ## The Components
+> This includes everything I created or edited as part of the project's requirements
+
 1. **PUG Templates** | *in the `/views/...` directory*
     1. **`layout.pug`** | *the default template which includes the `<html>` and `<head>`* 
     2. **`index.pug`** | *the template for the app's home page > `extends layout.pug`*
@@ -46,7 +48,7 @@
 > This is the topical-level flow. I've also provided comments at critical points within the program
 
 1. `app.js` runs and requires Express 
-    1. `app.js` uses the following route modules: | *the files are first required, `const main routes = require('./routes')` and then used, `app.use(mainRoutes`)`*
+    1. **`app.js` uses the following route modules:** | *the files are first required, `const main routes = require('./routes')` and then used, `app.use(mainRoutes`)`*
         1. `index.js` mainRoutes | *which routes to the home page*
             1. the `projectData` is required, `require('../data.json')` and passed through as a `res.locals` to the pug view, `res.render('index', { data });` | *this applies to the two following examples as well*
         2. `about-page.js` aboutRoute | *which routes to the about page*
@@ -70,7 +72,6 @@
     1. I changed the layout aside background to pure black for a little more contrast, and to match the borders I put around each of my imgs
 
 **Static Elements** 
-
 Just to note, I've used `express.static('public')` per the project's guidelines, where the new route for the contents within the public directory is now `/static/` 
 - And, the routes to the images are stored in the `data.json` files
 - the routes to the `<head>` elements and `<scripts>` are in the `layout.pug` view

@@ -18,6 +18,7 @@ block content
             li #{item}
         a.button.expanded(href=`${data.live_link}`, target='blank') Live Demo
         a.button.expanded(href=`${data.github_link}`, target='blank') GitHub Repo
+    //- the imgIndex var is for guaranteeing the caption corresponds with the correct img; they're written in the `data.json` file chronologically 
     - var imgIndex = 0
     each img in data.image_urls[1]
         img.image(src=`${img}`)
