@@ -5,7 +5,7 @@
 0. [Using the App](#using-the-app)
 1. [The Components](#the-components)
 2. [The Flow of the App](#the-flow-of-the-app)
-3. [Static Elements & CSS Changes](#static-elements-&-css-changes)
+3. [Static Elements and CSS Changes](#static-elements-and-css-changes)
 
 ## Using the App
 > Using the app should be simple enough. I'll assume you have Node.js installed on your computer, including NPM. 
@@ -16,28 +16,28 @@
 
 3. Open your favorite web-browser and type `localhost:3000/` into the URL bar&mdash;that should load this project's home page.
 
-4. All done. Yep, that should be it. You'll notice, there's a **start** script in the `package.json` which runs `node app.js` and **prestart** script that runs `npm install` which installs the dependencies specified within the `package.json` file. Yay!&mdash;technology is so much fun when it works ... so mind boggling.
+4. All done. Yep, that should be it. You'll notice, there's a **start** script in the `package.json` which runs `node app.js` and a **prestart** script that runs `npm install` which installs the dependencies specified within the `package.json` file. Yay!&mdash;technology is so much fun when it works ... so mind boggling when it doesn't.
 
 5. If it doesn't, then, tough luck. Nah, JK. Perhaps, make sure `node --version` returns a node version number, and the same with `npm --version`. Make sure you've changed your terminal's directory to wherever you've saved my project's files. Other than that, it works on my machine :wink:
 
 ## The Components
-- a. PUG Templates | *in the `/views/...` directory*
-    - `layout.pug` | *the default template which includes the `<html>` and `<head>`* 
-    - `index.pug` | *the template for the app's home page > `extends layout.pug`*
-    - `project.pug` | *the template for the app's project page > `extends layout.pug`*
-    - `about.pug` | *the template for the about page > `extends layout.pug`*
-    - `error.pug` | *the template for the 'general' error page > `extends layout.pug`*
-    - `page-not-found.pug` | *the template for the 404 status > `extends layout.pug`*
-- b. Static Assets | *in the `/public/...` directory*
-    - `foundation.css` | *these styles were written by [ZURB](http://foundation.zurb.com) and were left unaltered*
-    - `style.css` | *these styles were mostly written by Treehouse, though I list below what I changed*
-    - `/imgs/` | *these include all the imgs for the project&mdash;though it should be noted, the project uses `app.use('/static', express.static('public'))`, so path to this folder is actually `/static/imgs/` not `/public/imgs/`
-- c. App Javascript | *this does not include the `/js/` directory, which includes jquery and other vendor documents that I did not write nor adjust*
-    - `app.js` | *this is what calls the ***Express*** commands and routes*
-    - `/routes/index.js` | *this routes the home-page*
-    - `/routes/about-page.js` | *this routes the about-page*
-    - `/routes/project.js` | *this routes the project page*
-- d. JSON Files | *there are two main json files:*
+1. PUG Templates | *in the `/views/...` directory*
+    1. `layout.pug` | *the default template which includes the `<html>` and `<head>`* 
+    2. `index.pug` | *the template for the app's home page > `extends layout.pug`*
+    3. `project.pug` | *the template for the app's project page > `extends layout.pug`*
+    4. `about.pug` | *the template for the about page > `extends layout.pug`*
+    5. `error.pug` | *the template for the 'general' error page > `extends layout.pug`*
+    6. `page-not-found.pug` | *the template for the 404 status > `extends layout.pug`*
+2. Static Assets | *in the `/public/...` directory*
+    1. `foundation.css` | *these styles were written by [ZURB](http://foundation.zurb.com) and were left unaltered*
+    2. `style.css` | *these styles were mostly written by Treehouse, though I list below what I changed*
+    3. `/imgs/` | *these include all the imgs for the project&mdash;though it should be noted, the project uses `app.use('/static', express.static('public'))`, so path to this folder is actually `/static/imgs/` not `/public/imgs/`
+3. App Javascript | *this does not include the `/js/` directory, which includes jquery and other vendor documents that I did not write nor adjust*
+    1. `app.js` | *this is what calls the ***Express*** commands and routes*
+    2. `/routes/index.js` | *this routes the home-page*
+    3. `/routes/about-page.js` | *this routes the about-page*
+    4. `/routes/project.js` | *this routes the project page*
+4. JSON Files | *there are two main json files:*
     - `package.json` | *this is NPM package for installing the dependencies and running the app* 
     - `data.json` | *this is the data/information for the pages to render, which is fed into PUG templates dynamically* 
 
@@ -57,7 +57,7 @@
     3. path `/about` renders the `about` pug template | *see `about-page.js`*
 3. `app.js` then handles errors and renders the correct `err.status` and page respectively
     
-## Static Elements & CSS Changes
+## Static Elements and CSS Changes 
 > As per this project's grading requirements, we were required to make at least three css customizations. Those are enumerated here, including some additional info on how the static files are rendered. 
 
 1. **Font Changes** | *I changed the font in the following ways:*
@@ -69,7 +69,8 @@
 3. **Background**
     1. I changed the layout aside background to pure black for a little more contrast, and to match the borders I put around each of my imgs
 
-**Static Elements**
+**Static Elements** 
+
 Just to note, I've used `express.static('public')` per the project's guidelines, where the new route for the contents within the public directory is now `/static/` 
 - And, the routes to the images are stored in the `data.json` files
 - the routes to the `<head>` elements and `<scripts>` are in the `layout.pug` view
