@@ -2,10 +2,10 @@
  A Treehouse Techdegree project, practicing Node.js & Express 
 
 ## Overview 
-1. [The Components](#The%Components)
-2. [The Flow of the App](#The%Flow%of%the%App)
+1. [The Components](#the-components)
+2. [The Flow of the App](#the-flow-of-the-app)
 
-## 1. The Components
+## The Components
 - a. PUG Templates | *in the `/views/...` directory*
     - `layout.pug` | *the default template which includes the `<html>` and `<head>`* 
     - `index.pug` | *the template for the app's home page > `extends layout.pug`*
@@ -28,5 +28,5 @@
 
 ---
 
-## 2. The Flow of the App 
+## The Flow of the App 
 
