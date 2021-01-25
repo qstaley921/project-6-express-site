@@ -10,7 +10,7 @@ block content
         h1 #{data.project_name}
         p.lead.text-light
           | !{data.description}
-
+        hr
       .cell.portfolio-meta.small-6.medium-2.large-3
         h6 Technologies
         ul
@@ -21,7 +21,8 @@ block content
     - var imgIndex = 0
     each img in data.image_urls[1]
         img.image(src=`${img}`)
-        | <p>!{data.banner_captions[imgIndex++]}</p>
+        p.caption-text
+          | !{data.banner_captions[imgIndex++]}
         
 
     

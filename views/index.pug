@@ -14,12 +14,17 @@ block content
         | <span class="greeting-text">~</span>
         | <br/>
         | My name is Quentin, and this is my Treehouse Portfolio site. You can see my 'real' portfolio at #[a(href="https://qstaley.com" target="blank") Q Staley Dot Com], but that project is slow-roasting on the back-burner while I complete my #[a(href="https://teamtreehouse.com/techdegree" target="blank") Team Treehouse JavaScript Techdegree]. The following showcase includes 6 of the 10 techdegree projects (with this website counting as the sixth). The projects were designed by Treehouse, while the JavaScript powering them is all mine&mdash;with the help of my techdegree peers who've reviewed my code. The purpose is to prove, practice, and grow my Web Development skills, and of course, to make a mess of fun along the way. I hope you enjoy, and forever thank you for visiting &#128513;
+
+    hr
+
   article.grid-container.portfolio-index
     
     .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
         each project in projectData
             .cell
                 a(href=`/project/${project.id}`)
-                    img.thumbnail(src=`${project.image_urls[0]}`)
-                    h5 <span class="thumb-title">Project #{project.id}</span> <span class="thumb-name">#{project.project_name}</span>
+                    .thumbnail-container
+                        img.thumbnail(src=`${project.image_urls[0]}`)
+                        h3.tool-tip click to view
+                    h5.thumb-name <span class="thumb-title">Project #{project.id}</span> #{project.project_name}
       

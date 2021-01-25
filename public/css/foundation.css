@@ -4984,16 +4984,15 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   .tabs-panel.is-active {
     display: block; }
 
-.thumbnail {
+/* .thumbnail {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 1rem;
-  border: solid 4px #fefefe;
-  border-radius: 0;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
-  line-height: 0; }
+  line-height: 0; } */
 
 a.thumbnail {
+    border: none;
   transition: box-shadow 200ms ease-out; }
   a.thumbnail:hover, a.thumbnail:focus {
     box-shadow: 0 0 6px 1px rgba(23, 121, 186, 0.5); }
