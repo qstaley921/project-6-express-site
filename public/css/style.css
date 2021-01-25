@@ -135,7 +135,7 @@ a:hover{
 
 .portfolio-me{
   padding: 20px;
-  background: #121213;
+  background: #000;
   color: #fff;
   box-shadow: none !important;
 }
@@ -148,7 +148,7 @@ a:hover{
   .portfolio-me a{
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    color: #555;
+    color: rgb(141, 141, 141);
     font-size: 13px;
     letter-spacing: 2.5px;
     -webkit-text-transform: uppercase;
